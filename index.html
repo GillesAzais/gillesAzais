@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html x-ng-app="portfolio">
+<head>
+<meta charset="ISO-8859-1">
+<title>Gilles Azaïs</title>
+<link rel="stylesheet" type="text/css" href="view/css/styles.css">
+<link rel="stylesheet" type="text/css" href="view/css/custom.css">
+<script type="text/javascript" src="model/JS/angular/angular.js"></script>
+<script type="text/javascript"
+	src="model/JS/angular/angular-resource.min.js"></script>
+<script type="text/javascript"
+	src="model/JS/angular/angular-route.min.js"></script>
+<script type="text/javascript"
+	src="model/JS/angular/angular-cookies.min.js"></script>
+<script type="text/javascript"
+	src="model/JS/angular/angular-touch.min.js"></script>
+<script type="text/javascript"
+	src="model/JS/angular/angular-animate.min.js"></script>
+<script type="text/javascript" src="model/JS/JQuery/JQuery.js"></script>
+<script type="text/javascript" src="model/JS/custom/controllers.js"></script>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<nav class="navbar" x-ng-controller="menuController">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li id="home" class="active" x-ng-click="checkActive($event)">home<span
+						class="sr-only">(current)</span></li>
+					<li id="projects" x-ng-click="checkActive($event)">projects</li>
+					<li id="aboutMe" x-ng-click="checkActive($event)">about me</li>
+				</ul>
+				<div class="copywrite">© 2016 Gilles Azaïs</div>
+			<div class="socMed">
+			<img src=components/img/facebook.png>
+			<img src=components/img/linkedin.png>
+			</div>
+			</div>
+			
+			<!-- /.navbar-collapse -->
+		</nav>
+
+		<div id="homeBody">
+			<div class="brand">
+				<div class="brandQuote">Home</div>
+			</div>
+			<div class="container-fluid">
+				<p class="mainParagraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+					non iaculis justo. Phasellus eget interdum massa, nec commodo diam.
+					Nam vitae varius elit, non maximus augue. Fusce dapibus nulla vel
+					dignissim hendrerit. Cras ornare faucibus arcu nec mattis. Sed
+					ullamcorper, nisi eu pulvinar tempus, dui lacus auctor magna, in
+					dictum velit diam ac magna. Nullam mauris velit, laoreet eu dui
+					vitae, egestas ornare augue. Cras bibendum arcu eros, a iaculis
+					magna gravida id. Fusce ut cursus augue, ut porttitor ipsum. Etiam
+					eu laoreet enim. <br> <br>Nullam cursus euismod nibh a
+					sagittis. Sed at risus eget mauris hendrerit blandit quis nec
+					mauris. Nulla eu aliquam massa. Ut est felis, luctus at suscipit
+					id, euismod vel lectus. Maecenas eu vehicula risus, at aliquam
+					neque. Sed at luctus arcu.Sed ultrices aliquet commodo. Aliquam
+					sollicitudin, nisl finibus accumsan gravida, ligula velit aliquet
+					est, at bibendum erat lorem non dui. Sed in lacinia sem, a interdum
+					ex. Sed lacinia accumsan tempor. Fusce at eros vestibulum lectus
+					pharetra sollicitudin at in justo. Aliquam porta mi a est tempus
+					porttitor. Pellentesque a sapien est. In pulvinar efficitur libero,
+					at hendrerit nulla. Nam pretium, lacus id sollicitudin luctus, erat
+					sapien tincidunt urna, et laoreet augue nisl quis felis.
+				</p>
+			</div>			
+		</div>
+		<div id="projectsBody">
+			<div class="brand">
+				<div class="brandQuote">Projects</div>
+			</div>
+		</div>
+
+		<div id="aboutMeBody">
+			<div class="brand">
+				<div class="brandQuote">AboutMe</div>
+			</div>
+		</div>
+		<div class="smallLinkBar">
+		</div>
+	</div>
+
+</body>
+</html>
