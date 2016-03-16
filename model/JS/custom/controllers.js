@@ -48,6 +48,8 @@ var changeAnimation = function(origin2) {
 
 var portfolioModule = angular.module('portfolio', [ 'ngAnimate' ]).controller(
 		'menuController', function($scope) {
+			//--MENU--
+			//INITIATE MENU AND SET VISIBILITY
 			var menuItems = []
 			var initMenu = function(menuItems) {
 				var home = $('#home');
@@ -59,8 +61,9 @@ var portfolioModule = angular.module('portfolio', [ 'ngAnimate' ]).controller(
 				menuItems.push(aboutMe);
 				menuItems.push(projects);
 			}
-		
 			initMenu(menuItems);
+		
+			//MENU EVENTHANDLER
 			$scope.checkActive = function(e) {
 				
 
@@ -100,4 +103,9 @@ var portfolioModule = angular.module('portfolio', [ 'ngAnimate' ]).controller(
 				// $('#menubar').css(menubarStyle(elementTop+10,elementLeft+(offset),elementSizeInner));
 				//
 			}
+			//--MENU--
+		
+			
+		
+		
 		});

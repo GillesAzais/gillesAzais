@@ -2,6 +2,7 @@
 <html x-ng-app="portfolio">
 <head>
 <meta charset="ISO-8859-1">
+
 <title>Gilles Azaïs</title>
 <link rel="stylesheet" type="text/css" href="view/css/styles.css">
 <link rel="stylesheet" type="text/css" href="view/css/custom.css">
@@ -26,29 +27,28 @@
 		<nav class="navbar" x-ng-controller="menuController">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse">
+			<div class="navbar">
 				<ul class="nav navbar-nav">
 					<li id="home" class="active" x-ng-click="checkActive($event)">home<span
 						class="sr-only">(current)</span></li>
 					<li id="projects" x-ng-click="checkActive($event)">projects</li>
 					<li id="aboutMe" x-ng-click="checkActive($event)">about me</li>
 				</ul>
-				<div class="copywrite">© 2016 Gilles Azaïs</div>
-			<div class="socMed">
-			<img src=components/img/facebook.png>
-			<img src=components/img/linkedin.png>
-			</div>
+				
+		
 			</div>
 			
 			<!-- /.navbar-collapse -->
 		</nav>
-
 		<div id="homeBody">
-			<div class="brand">
+		<div class="container-fluid">
+		
+			<div id="brand">
 				<div class="brandQuote">Home</div>
 			</div>
-			<div class="container-fluid">
-				<p class="mainParagraph">
+			<div id="homeBodyContent">
+			
+			<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
 					non iaculis justo. Phasellus eget interdum massa, nec commodo diam.
 					Nam vitae varius elit, non maximus augue. Fusce dapibus nulla vel
@@ -70,20 +70,28 @@
 					at hendrerit nulla. Nam pretium, lacus id sollicitudin luctus, erat
 					sapien tincidunt urna, et laoreet augue nisl quis felis.
 				</p>
+				
 			</div>			
 		</div>
+		</div>
+		
+		
 		<div id="projectsBody">
-			<div class="brand">
+			
+			<div id="brand">
 				<div class="brandQuote">Projects</div>
 			</div>
 		</div>
 
 		<div id="aboutMeBody">
-			<div class="brand">
+			<div id="brand">
 				<div class="brandQuote">AboutMe</div>
 			</div>
 		</div>
-		<div class="smallLinkBar">
+		<div class="copywrite">© 2016 Gilles Azaïs</div>
+		<div class="socMed">
+			<img src=components/img/facebook.png>
+			<img src=components/img/linkedin.png>
 		</div>
 	</div>
 

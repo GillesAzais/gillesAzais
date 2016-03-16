@@ -16,16 +16,24 @@ p {
   text-align: justify; }
 
 .navbar-nav {
+  display: block;
   min-width: 50vw;
   position: fixed;
   overflow: hidden;
-  right: 15px; }
+  right: 15px;
+  margin: 0; }
 
 .socMed {
-  @extends nav;
-  float: left; }
+  @extends #copywrite;
+  display: inline; }
+  .socMed img {
+    float: left;
+    width: 21.03444px;
+    height: 100%; }
 
 .copywrite {
+  font-size: 2.75066vw;
+  height: font-size;
   float: left; }
 
 #menubar {
@@ -47,7 +55,7 @@ p {
 
 .navbar-nav li {
   margin-left: 8.09017%;
-  font-size: 1.61803vh;
+  font-size: 1.94164vw;
   font-weight: bolder; }
 
 .navbar-nav li:FOCUS {
@@ -62,20 +70,14 @@ p {
 .page-header {
   border: none; }
 
-.brand {
+#brand {
   width: 100%;
   height: 148.32816px;
-  border: solid 1px; }
+  border: solid 1px;
+  float: left; }
 
 .brandQuote {
   margin: 8.09017% 16.18034% 16.18034% 26.18034%; }
-
-.mainParagraph {
-  max-width: 40.45085vw;
-  margin-top: 2.61803vh; }
-
-.mainParagraph p {
-  max-width: 100%; }
 
 .navbar-collapse.collapse {
   display: block !important; }
@@ -89,8 +91,8 @@ p {
 .navbar-right {
   float: right !important; }
 
-img {
-  width: 5vw;
-  height: width; }
+#homeBodyContent {
+  @extends;
+  max-width: 52.36068vw; }
 
 /*# sourceMappingURL=custom.css.map */
